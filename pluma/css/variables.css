@@ -1,0 +1,42 @@
+/* =============================================================
+   PLUMA · variables.css
+   Paleta de colores y valores comunes de la práctica.
+   Los colores se han sacado de la página de referencia.
+
+   NO modifiques este archivo. En tu estilos.css usa siempre
+   las variables con var(--nombre), por ejemplo:
+       color: var(--color-texto);
+   ============================================================= */
+
+:root {
+  /* ---------- Colores de marca ---------- */
+  --color-primario:        #1c449b;  /* cabecera, pestaña «PLUMA CORREO» y su línea */
+  --color-titular:         #004788;  /* título grande de la portada e iconos de su lista */
+  --color-accion:          #008000;  /* botones verdes y check de «Login SSL» */
+  --color-accion-hover:    #006400;  /* botones verdes al pasar el ratón */
+
+  /* ---------- Textos ---------- */
+  --color-texto:           #222222;  /* texto general, etiquetas de formulario */
+  --color-texto-menu:      #333333;  /* texto del menú gris */
+  --color-texto-fuerte:    #000000;  /* títulos de las tarjetas */
+  --color-texto-secundario:#5d5d5d;  /* enlaces pequeños bajo el login */
+  --color-texto-apagado:   #737373;  /* antetítulos «CLOUD» y «ENCRIPTACIÓN» */
+  --color-texto-invertido: #ffffff;  /* texto sobre fondo azul o verde */
+  --color-placeholder:     #767676;  /* texto de ayuda dentro de los campos */
+
+  /* ---------- Fondos ---------- */
+  --color-fondo:           #ffffff;  /* fondo de la página y de la tarjeta de login */
+  --color-fondo-menu:      #f3f3f3;  /* franja gris del menú */
+
+  /* ---------- Líneas y bordes ---------- */
+  --color-borde-campo:     #b4b4b4;  /* borde de los campos de texto y del desplegable */
+  --color-borde-foco:      #222222;  /* borde de un campo cuando tiene el foco */
+  --color-separador:       #d3d3d3;  /* rayita vertical del menú, junto a la casa */
+
+  /* ---------- Tipografía ---------- */
+  --fuente-base: "Open Sans", Arial, Helvetica, sans-serif;
+
+  /* ---------- Sombras (ya aplicadas en proporcionado.css) ---------- */
+  --sombra-tarjeta: 0 2px 10px rgba(0, 0, 0, 0.18);
+  --sombra-foco:    0 0 0 1px var(--color-borde-foco);
+}
