@@ -20,12 +20,15 @@ body {
     list-style: none;
     padding: 0;
     align-items:center;
+    
  
 }
 
 .search {
     margin-left: auto;
-    align-items:center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
  
     
     
@@ -76,24 +79,24 @@ body {
         list-style: none;
         text-align: center;
         margin-left: 28px;
+        
 
         .account__link {
-            display: block;
+            display: grid;
             margin-right: 28px;
             align-items: center;
         
         }
-        
-            
-         .account__list:hover {
+    }
+    
+    
+    .account__list:hover {
             text-decoration: underline;
             
 
         }
-        
-
-    }
 }
+
 
         
 
