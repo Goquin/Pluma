@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLUMa · Correo electronico gratuito</title>
+    <title>PLUMA · Correo electronico gratuito</title>
 
     <!-- Enlaces a las fuentes y a las hojas de estilo -->
 
@@ -21,20 +21,40 @@
     <!-- Header de la pagina -->
     <header class="topbar">
 
-        <a class="topbar__logo" href=""></a>
+        <a class="topbar__logo" ><img src="./img/logo-pluma.svg" width="156px" height="40px" alt="PLUMA,ir a la portada"></a>
         <form class="search">
-            <label for="label__search"></label>
-            <input type="text" name="input__search" id="inp">
+            <label for="label__search" class="search__label">Buscar</label>
+            <input type="text" name="input__search" id="inp" class="search__input">
+            <button class="search__btn"><img src="./img/iconos/buscar.svg" width="22px" height="22px"></button>
         </form>
-        <nav class="account"></nav>
+        
+        <nav class="account">
+
+            <ul class="account__list">
+                
+                <li><a class="account__link"><img class="2try" src="./img/iconos/usuario.svg" width="24px" height="24px"></a>Registrarse</li>
+                <li><a class="account__link"><img class="jojoja" src="./img/iconos/sobre.svg" width="28px" height="28px"></a>Inicio de sesion</li>
+
+            </ul>
+
+        </nav>
 
     </header>   
 
 
     <!-- Navegacion de la pagina -->
-    <nav>
+    <nav class="mainnav">
 
+        <ul class="mainnav__list">
 
+            <li class="mainnav__item--home"><a href="home"><img src="./img/iconos/inicio.svg" width="22px" height="22px" alt="Inicio"></a></li>
+            <li class="mainnav__item"><a href="correo">Correo <img src="./img/iconos/flecha-abajo.svg" width="22px" height="22px"></a></li>
+            <li class="mainnav__item"><a href="funciones">Funciones <img src="./img/iconos/flecha-abajo.svg"></a></li>
+            <li class="mainnav__item"><a href="cloud">Cloud <img src="./img/iconos/flecha-abajo.svg"></a></li>
+            <li class="mainnav__item"><a href="seguridad">Seguridad <img src="./img/iconos/flecha-abajo.svg"></a></li>
+            <li class="mainnav__item"><a href="soporte">Soporte <img src="./img/iconos/flecha-abajo.svg"></a></li>
+
+        </ul>
 
     </nav>
 
