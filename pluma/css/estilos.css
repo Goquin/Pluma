@@ -2,6 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -71,32 +72,88 @@ body {
    align-items:center;
  
 
-     .account__list {
-
+    .account__list {
         color: var(--color-texto-invertido);
         font-weight: 700;
-        display: flex;
         list-style: none;
         text-align: center;
         margin-left: 28px;
-        
+        justify-content: center;
+        display: flex;
 
         .account__link {
-            display: grid;
+            flex-direction: column;
+            display: flex;
             margin-right: 28px;
             align-items: center;
-        
         }
+
     }
     
     
     .account__list:hover {
+
             text-decoration: underline;
             
 
         }
 }
 
+.mainnav {
+    
+    background-color: var(--color-fondo-menu);
+    
+   
+
+    .mainnav__list {
+        display: flex;
+        height: 48px;
+        gap: 40px;
+        align-items: center;
+        margin-top: 0%;
+        justify-content: auto;
+        list-style: none;
+    }
+
+    .mainnav__item a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-texto-menu);
+    }
+
+    .mainnav__item:hover  a{
+        
+        text-decoration: underline;
+        
+    }
+
+}
+
+.login {
+    background-color: var(--color-fondo);
+    padding: 30px 38px;
+    display: flex;
+    
+    .login__title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        }
+
+    .login__close {
+        margin-left: auto;
+        top: 34px;
+        left: 34px;
+    }
+
+    
+
+        span {
+            color: var(--color-accion);
+        }
+    
+}
 
         
 

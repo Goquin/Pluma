@@ -32,8 +32,8 @@
 
             <ul class="account__list">
                 
-                <li><a class="account__link"><img class="2try" src="./img/iconos/usuario.svg" width="24px" height="24px"></a>Registrarse</li>
-                <li><a class="account__link"><img class="jojoja" src="./img/iconos/sobre.svg" width="28px" height="28px"></a>Inicio de sesion</li>
+                <a class="account__link"><img class="2try" src="./img/iconos/usuario.svg" width="24px" height="24px">Registrarse</a>
+                <a class="account__link"><img class="jojoja" src="./img/iconos/sobre.svg" width="28px" height="28px">Inicio de sesion</a>
 
             </ul>
 
@@ -63,7 +63,34 @@
     <!-- Main de la pagina -->
     <main>
 
-        <section class="login"></section>
+        <section class="login">
+
+            <h2 class="login__title">Login<span class="login__ssl">SSL <img src="./img/iconos/check.svg" alt="Check verde"></span></h2>
+            
+            <button class="login__close"><img src="./img/iconos/cerrar.svg" alt="Boton de cerrrar"></button>
+
+            <form action="login" class="login__form">
+                
+                <div class="field">
+                    <label for="mail" class="field__label">Correo Electronico</label>
+                    <input type="text" class="field__input" id="mail" name="mail">
+                </div>
+
+                <div class="field">
+                    <label for="password" class="field__label">Password</label>
+                    <input type="password" class="field__input" id="pass" name="pass">
+                </div>
+
+                <button class="btn">INICIO DE SESION</button>
+
+            </form>
+
+            <P class="login__links">
+                <a href="" class="login__link">Ha olvidado su contraseña?</a>
+                <a href="" class="login__link">Keep me logged in!</a>
+            </P>
+
+        </section>
 
         <section class="mail">
 
